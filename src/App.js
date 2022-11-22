@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home';
+import './assets/scss/index.scss'
 
 function App() {
   return (
