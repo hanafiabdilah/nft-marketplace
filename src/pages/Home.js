@@ -1,4 +1,4 @@
-import { Auction, Hero, NFT, Wallets } from '../components/home/index'
+import { Auction, Hero, NFT, Steps, Wallets } from '../components/home/index'
 
 export default function Home() {
     return (
@@ -7,6 +7,7 @@ export default function Home() {
             <Wallets />
             <Auction />
             <NFT />
+            <Steps />
         </>
     )
 }

@@ -332,9 +332,37 @@ section {
                     background-color: #14120f;
                 }
 
+                &:first-child {
+                    margin-left: 0;
+                }
+
                 &:last-child {
                     margin-right: 0;
                 }
+            }
+        }
+    }
+
+    &#steps {
+        .card-step {
+            background-color: #14120f;
+            border: 1px solid #23211f;
+            padding: 15px;
+
+            .icon-box {
+                padding: 10px;
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+
+                svg {
+                    color: $primary-color;
+                }
+            }
+
+            p {
+                font-size: 0.8em;
+                color: #9c9c9c;
             }
         }
     }

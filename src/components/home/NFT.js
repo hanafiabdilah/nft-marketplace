@@ -7,9 +7,9 @@ export default function NFT() {
     return (
         <section id="nft">
             <div className="container">
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-lg-flex align-items-center justify-content-between">
                     <Title topTitle="Trending" title="Trendings NFT's" />
-                    <div className="filter">
+                    <div className="filter mt-3 mt-lg-0">
                         {filterButtons.map((item, index) => {
                             return (
                                 <button key={index}>{item}</button>
