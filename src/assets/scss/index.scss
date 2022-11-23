@@ -15,18 +15,17 @@ a {
 
 .button {
     padding: 10px 35px;
-
     border: 1px solid transparent;
+    border-radius: 3px;
+    transition: 0.3s;
 
     &-primary {
         color: #fff;
-        background-color: $primary-color;
+        background: $primary-gradient-color;
         border: 1px solid $primary-color;
 
         &:hover {
             color: #fff;
-            background-color: $primary-color-hover;
-            border: 1px solid $primary-color-hover;
         }
     }
 
@@ -314,6 +313,27 @@ section {
                 h4 {
                     font-size: 1.3em;
                     font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &#nft {
+        .filter {
+            button {
+                background-color: transparent;
+                color: #d2d2d2;
+                margin: 0 5px;
+                padding: 3px 10px;
+                font-size: 0.9em;
+                border: 1px solid #23211f;
+
+                &:hover {
+                    background-color: #14120f;
+                }
+
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }

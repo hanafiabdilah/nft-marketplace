@@ -1,12 +1,22 @@
 import { Col, Row } from "react-bootstrap";
-import { Title, MainCardV2 } from "../";
+import { Title, MainCardV2, Button } from "../";
 import nfts from '../../data/nfts'
 
 export default function NFT() {
+    const filterButtons = ['All', 'Art', '3D Art', 'Game', 'Painting', 'Wall Art']
     return (
         <section id="nft">
             <div className="container">
-                <Title topTitle="Trending" title="Trendings NFT's" />
+                <div className="d-flex align-items-center justify-content-between">
+                    <Title topTitle="Trending" title="Trendings NFT's" />
+                    <div className="filter">
+                        {filterButtons.map((item, index) => {
+                            return (
+                                <button key={index}>{item}</button>
+                            )
+                        })}
+                    </div>
+                </div>
                 <Row>
                     {nfts.map((item, index) => {
                         return (
@@ -14,6 +24,9 @@ export default function NFT() {
                         )
                     })}
                 </Row>
+                <div className="text-center mt-5">
+                    <Button type="link" to="/nfts" variant="outline-primary">Explore More</Button>
+                </div>
             </div>
         </section>
     )
