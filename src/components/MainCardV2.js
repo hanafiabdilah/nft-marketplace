@@ -1,9 +1,12 @@
 import React from 'react'
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
-const Header = () => {
+const Header = ({ item }) => {
+    const [loved, setLoved] = React.useState(false);
+
     return (
-        <div className="header mb-2">
-            <div className="d-flex align-items-center justify-content-between">
+        <div className="header mb-3">
+            <div className="d-flex align-items-center justify-content-between mb-2">
                 <div className="users d-flex align-items-center">
                     <div className="avatar">
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="user" />
@@ -15,6 +18,12 @@ const Header = () => {
                     <h5 className="mb-0 ms-1"><span>+5</span></h5>
                 </div>
                 <h5 className="mb-0"><span>Owner - </span>@hanafiabdilah</h5>
+            </div>
+            <div className="image">
+                <img src={item.image} alt={item.title} />
+                <button onClick={() => setLoved(!loved)} className="love-box align-items-center justify-content-center">
+                    {loved ? <AiFillHeart /> : <AiOutlineHeart />}
+                </button>
             </div>
         </div >
     )
@@ -50,7 +59,6 @@ const Body = ({ item }) => {
 
     return (
         <div className="body">
-            <img src={item.image} alt={item.title} className="mb-3" />
             <div className="d-flex align-items-center justify-content-between mb-3">
                 <div>
                     <h5 className="mb-1">Current Bid-</h5>

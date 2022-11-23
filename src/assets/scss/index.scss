@@ -67,17 +67,31 @@ a {
 
     &:hover {
         border: 1px solid $primary-color;
+
+        .header {
+            .love-box {
+                display: flex;
+
+            }
+        }
+    }
+
+    .love-box {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        right: 10px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
     }
 
     &.v1 {
         &:hover {
-            .header {
-                .love-box {
-                    display: flex;
-
-                }
-            }
-
             .body {
                 .bid-button {
                     color: #fff;
@@ -95,20 +109,6 @@ a {
                 width: 100%;
                 height: 200px;
                 object-fit: cover;
-            }
-
-            .love-box {
-                display: none;
-                position: absolute;
-                background-color: transparent;
-                border: none;
-                color: #fff;
-                right: 10px;
-                top: 10px;
-                background-color: rgba(0, 0, 0, 0.7);
-                width: 30px;
-                height: 30px;
-                border-radius: 3px;
             }
 
             .live-box {
@@ -195,6 +195,17 @@ a {
                 }
             }
 
+            .image {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+
             .users {
                 .avatar {
                     margin-left: 7px;
@@ -230,12 +241,6 @@ a {
                 font-weight: 300;
                 font-size: 0.7em;
                 color: #938476;
-            }
-
-            img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
             }
 
             .bid-button {
