@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
-import { MainCardV1, Title } from "../../index";
-import auctions from "../../../data/auctions";
+import { MainCardV1, Title } from "../index";
+import auctions from "../../data/auctions";
 
 export default function Auction() {
     return (
