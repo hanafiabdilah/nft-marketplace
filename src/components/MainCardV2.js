@@ -6,7 +6,7 @@ const Header = ({ item }) => {
 
     return (
         <div className="header mb-3">
-            <div className="d-flex align-items-center justify-content-between mb-2">
+            <div className="d-flex align-items-center justify-content-between mb-3">
                 <div className="users d-flex align-items-center">
                     <div className="avatar">
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="user" />
