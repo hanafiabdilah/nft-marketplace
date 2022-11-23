@@ -1,3 +1,4 @@
 import Hero from './Hero'
+import Wallets from './Wallets'
 
-export { Hero }
+export { Hero, Wallets }

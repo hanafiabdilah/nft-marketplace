@@ -40,20 +40,42 @@ a {
     }
 }
 
+.title {
+    margin-bottom: 10px;
+
+    .top-title {
+        color: $primary-color;
+        font-size: 1.4em;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 35px;
+            height: 2px;
+            background-color: $primary-color;
+            margin-right: 10px;
+        }
+    }
+}
+
 body {
     background-color: #020205;
     color: #fff;
 }
 
 section {
+    padding: 60px 0;
+
     &#hero {
         background: url('../images/hero.png');
-        background-position: right 100px center;
+        background-position: right 250px center;
         background-repeat: no-repeat;
         background-size: 500px auto;
         height: 900px;
 
         h1 {
+            font-weight: 700;
             font-size: 6em;
 
             span {
@@ -65,6 +87,38 @@ section {
         p {
             font-size: 1.3em;
             margin: 40px 0;
+        }
+    }
+
+    &#wallets {
+        .wallet-card {
+            background-color: #0B090C;
+            border: 2px solid #101012;
+
+            &:hover {
+                border: 2px solid $primary-color;
+
+                .card-body {
+                    h4 {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .card-body {
+                text-align: center;
+
+                img {
+                    width: 50%;
+                    height: 100px;
+                    object-fit: contain;
+                }
+
+                h4 {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                }
+            }
         }
     }
 }
