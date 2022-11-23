@@ -2,6 +2,7 @@
 
 $primary-color: #ED7926;
 $primary-color-hover: #d86d21;
+$primary-gradient-color: linear-gradient(132deg, rgba(242, 138, 36, 1) 0%, rgba(255, 102, 28, 1) 100%);
 
 * {
     margin: 0;
@@ -95,7 +96,7 @@ a {
             .body {
                 .bid-button {
                     color: #fff;
-                    background-color: $primary-color;
+                    background: $primary-gradient-color;
                     bottom: -30px;
                     padding: 5px 30px;
                 }
@@ -180,7 +181,7 @@ a {
             .body {
                 .bid-button {
                     color: #fff;
-                    background-color: $primary-color;
+                    background: $primary-gradient-color;
                 }
             }
         }
