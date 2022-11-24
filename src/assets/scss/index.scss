@@ -402,6 +402,54 @@ section {
     }
 }
 
+footer {
+    padding: 60px 0 20px 0;
+
+    .menus {
+        background-color: #14120f;
+        padding: 20px;
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: #828282;
+
+                    &:hover {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+
+    .subscription {
+        padding: 20px;
+
+        .subscribe-form {
+            background-color: #14120f;
+            color: #dfdfdf;
+            border: 1px solid #23211f;
+
+            &:focus {
+                color: #dfdfdf;
+                background-color: #14120f;
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: 50px;
+
+        p {
+            color: #8f8984;
+            font-size: 0.9em;
+        }
+    }
+}
+
 @media(max-width: 1200px) {
     section {
         &#hero {
