@@ -59,6 +59,16 @@ a {
     }
 }
 
+.love-box {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
 .main-card {
     background-color: #14120f;
     border: 1px solid #23211f;
@@ -401,6 +411,55 @@ section {
                 font-weight: 300;
                 font-size: 0.8em;
                 color: $primary-color;
+            }
+        }
+    }
+
+    &#collection {
+        .card-collection {
+            background-color: #14120f;
+            border: 1px solid #23211f;
+            padding: 10px;
+
+            .col {
+                margin: 0;
+                padding: 0 5px;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 3px;
+            }
+
+            button {
+                &.love {
+                    background-color: transparent;
+                    color: #fff;
+                    border: none;
+                }
+            }
+
+            .user {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+
+                h4 {
+                    color: $primary-color;
+                    margin-bottom: 5px;
+                    font-size: 1.3em;
+                }
+
+                h6 {
+                    font-size: 0.8em;
+
+                    span {
+                        color: #828282;
+                    }
+                }
             }
         }
     }
