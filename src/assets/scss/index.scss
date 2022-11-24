@@ -366,6 +366,40 @@ section {
             }
         }
     }
+
+    &#creators {
+        .card-creator {
+            background-color: #14120f;
+            border: 1px solid #23211f;
+            padding: 15px;
+
+            &:hover {
+                border: 1px solid $primary-color;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 1px solid $primary-color;
+            }
+
+            svg {
+                color: $primary-color;
+            }
+
+            h4 {
+                font-size: 1.2em;
+            }
+
+            h6 {
+                font-weight: 300;
+                font-size: 0.8em;
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 @media(max-width: 1200px) {
