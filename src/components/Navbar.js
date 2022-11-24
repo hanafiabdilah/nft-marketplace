@@ -1,8 +1,8 @@
 import { Navbar as NavbarBS, Container, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import { Button } from '../'
-import logo from '../../assets/images/logo.png'
-import navMenus from '../../data/navMenus'
+import { Button } from '.'
+import logo from '../assets/images/logo.png'
+import navMenus from '../data/navMenus'
 
 export default function Navbar() {
     return (
